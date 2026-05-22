@@ -53,7 +53,7 @@ const FAQ: React.FC = () => {
           color: #CDAF91;
           text-transform: uppercase;
           letter-spacing: 4px;
-          font-size: 0.9rem;
+          font-size: 0.98rem;
           font-weight: 700;
           display: block;
           margin-bottom: 1rem;
@@ -61,7 +61,7 @@ const FAQ: React.FC = () => {
 
         .faq-header h2 {
           font-size: 2.8rem;
-          color: #4A4A4A;
+          color: #060606;
           margin: 0;
         }
 

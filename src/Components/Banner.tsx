@@ -29,7 +29,7 @@ const Banner: React.FC = () => {
         }
 
         .banner-content h4 {
-          color: #CDAF91;
+          color: #795548;
           text-transform: uppercase;
           letter-spacing: 3px;
           font-size: 0.9rem;
@@ -37,21 +37,21 @@ const Banner: React.FC = () => {
         }
 
         .banner-content h1 {
-          color: #4A4A4A;
+          color: #0f0f0f;
           font-size: 3.5rem;
           line-height: 1.2;
           margin: 0 0 20px 0;
         }
 
         .banner-content p {
-          color: #6D6D6D;
+          color: #252525;
           font-size: 1.1rem;
           max-width: 450px;
           margin-bottom: 30px;
         }
 
         .shop-button {
-          background-color: #CDAF91;
+          background-color: #795548;
           color: white;
           border: none;
           padding: 15px 40px;
