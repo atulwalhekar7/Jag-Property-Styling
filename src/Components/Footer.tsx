@@ -5,11 +5,10 @@ const Footer: React.FC = () => {
     <>
       <style>{`
         .footer {
-          background-color: #CDAF91;
+          background-color: #D3D3D3;
           color: #ECE6DF;
           font-family: 'Libre Baskerville', serif;
           padding: 80px 4rem 30px;
-          margin-top: 60px;
         }
 
         .footer-grid {

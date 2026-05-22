@@ -6,6 +6,7 @@ import Footer from './Components/Footer'
 import About from './Components/About'
 import OurProcess from './Components/OurProcess'
 import FAQ from './Components/FAQ'
+import Contact from './Components/Contact'
 
 function App() {
   const [] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <About />
       <OurProcess />
       <FAQ />
+      <Contact />
       <Footer />
     </>
   )
