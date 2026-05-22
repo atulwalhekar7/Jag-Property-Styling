@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
 
         .navbar {
           font-family: 'Libre Baskerville', serif;
-          background-color: #CDAF91;
+          background-color: #D3D3D3;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -41,9 +41,9 @@ const Navbar: React.FC = () => {
 
         .nav-item {
           text-decoration: none;
-          color: #080808;
+          color: #4A4A4A;
           font-size: 0.85rem;
-          font-weight: 400;
+          font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 2px;
           transition: all 0.3s ease;
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
         }
 
         .nav-item:hover {
-          color: #CDAF91;
+          color: black;
         }
 
         .nav-item::after {
