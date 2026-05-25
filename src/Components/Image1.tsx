@@ -8,9 +8,9 @@ const Image1: React.FC = () => {
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
         .image1-container {
-          position: relative;
-          width: 100%;
-          height: 500px;
+          position: relative; /* Keep relative for overlay positioning */
+          width: 100%; /* Ensure it takes full width */
+          height: clamp(250px, 45vw, 500px); /* Fluid height based on width */
           overflow: hidden;
           font-family: 'Playfair Display';
         }
@@ -50,11 +50,11 @@ const Image1: React.FC = () => {
         }
 
         .image1-text h3 {
-          font-size: 30px;
-          margin-bottom: 1.5rem;
-          letter-spacing: 3px;
-         
-          
+          font-size: clamp(1.15rem, 5vw, 2.2rem);
+          margin-bottom: 0;
+          letter-spacing: clamp(1px, 0.4vw, 3px);
+          line-height: 1.4;
+          max-width: 900px;
         }
 
         .image1-text p {
@@ -65,9 +65,8 @@ const Image1: React.FC = () => {
         }
 
         @media (max-width: 768px) {
-          .image1-container { height: 400px; }
-          .image1-text h3 { font-size: 2rem; } /* Changed from h2 to h3 as per previous request */
-          .image1-text p { font-size: 1rem; }
+          .image1-container { height: clamp(300px, 60vh, 500px); }
+          .image1-text h3 br { display: none; } /* Remove manual breaks on mobile */
         }
       `}</style>
 

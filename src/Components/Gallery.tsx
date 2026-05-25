@@ -305,7 +305,11 @@ const Gallery: React.FC = () => {
           .gallery-card   { width: 200px; height: 320px; }
           .gallery-card:nth-child(even) { height: 370px; }
           .gallery-header h2 { font-size: 2rem; }
-          .gallery-nav { display: none; }
+          .gallery-nav { 
+            width: 38px;
+            height: 38px;
+          }
+          .gallery-nav svg { width: 14px; height: 14px; }
         }
       `}</style>
 
