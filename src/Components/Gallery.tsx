@@ -17,11 +17,11 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   { id: 1, src: Image1, alt: 'Living room sofa', label: 'Living Spaces' },
   { id: 2, src: Image2, alt: 'Modern bedroom', label: 'Bedrooms' },
-  { id: 3, src: Image3, alt: 'Dining area', label: 'Dining' },
+  { id: 3, src: Image3, alt: 'Dining area', label: 'Dining Area' },
   { id: 4, src: Image4, alt: 'Study room', label: 'Study & Office' },
   { id: 5, src: Image5, alt: 'Luxury bathroom', label: 'Bathrooms' },
-  { id: 6, src: Image6, alt: 'Outdoor space', label: 'Outdoor' },
-  { id: 7, src: Image7, alt: 'Minimal interior', label: 'Minimal' },
+  { id: 6, src: Image6, alt: 'Outdoor space', label: 'Outdoor Spaces' },
+  { id: 7, src: Image7, alt: 'Minimal interior', label: 'Minimal Interiors' },
 ];
 
 const Gallery: React.FC = () => {
@@ -335,7 +335,7 @@ const Gallery: React.FC = () => {
             {galleryItems.map((item) => (
               <div key={item.id} className="gallery-card">
                 <img src={item.src} alt={item.alt} draggable={false} />
-                <span className="gallery-card-watermark">Jag Property Styling</span>
+                {/* <span className="gallery-card-watermark">Jag Property Styling</span> */}
                 <div className="gallery-card-overlay">
                   <span>{item.label}</span>
                 </div>
