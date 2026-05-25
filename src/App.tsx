@@ -10,6 +10,7 @@ import Contact from './Components/Contact'
 import Image1 from './Components/Image1'
 import Image2 from './Components/Image2'
 // import ScrollToTop from './Components/ScrollToTop'
+import Gallery from './Components/Gallery'
 
 function App() {
   const [] = useState(0)
@@ -22,6 +23,7 @@ function App() {
       <About />
       <OurProcess />
       <Image1 />
+      <Gallery />
       <FAQ />
       <Contact />
       <Image2 />

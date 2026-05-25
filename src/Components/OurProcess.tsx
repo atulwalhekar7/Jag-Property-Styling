@@ -203,8 +203,8 @@ const OurProcess: React.FC = () => {
           overflow: hidden;
         }
         .step-image {
-          width: 100%;
-          height: 500px;
+          width: 90%;
+          height: 300px;
           object-fit: cover;
           display: block;
           transform: scale(1.05);
@@ -239,13 +239,13 @@ const OurProcess: React.FC = () => {
         }
         .step-title {
           font-size: 2.2rem;
-          color: #4A4A4A;
+          color: #795548;
           margin: 0;
         }
         .step-description {
-          color: #6D6D6D;
+          color: #0c0c0c;
           line-height: 1.9;
-          font-size: 1.1rem;
+          font-size: 20px;
           position: relative;
           z-index: 1;
         }

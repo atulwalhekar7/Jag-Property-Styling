@@ -72,8 +72,8 @@ const Contact: React.FC = () => {
         }
 
         .contact-description {
-          font-size: 1.15rem;
-          color: #666;
+          font-size: 20px;
+          color: #0c0c0c;
           line-height: 1.9;
           margin-bottom: 4rem;
           max-width: 440px;

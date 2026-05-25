@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
 
         .footer-section h3 {
           color: #070707;
-          font-size: 1.2rem;
+          font-size: 22px;
           margin-bottom: 25px;
           text-transform: uppercase;
           letter-spacing: 2px;
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
 
         .footer-brand p {
           line-height: 1.8;
-          font-size: 0.95rem;
+          font-size:18px;
           color: #070707;
           max-width: 400px;
         }
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
         .footer-links a {
           text-decoration: none;
           color: #070707;
-          font-size: 0.9rem;
+          font-size: 18px;
           transition: all 0.3s ease;
           display: inline-block;
         }
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
 
         .contact-info p {
           margin-bottom: 15px;
-          font-size: 0.9rem;
+          font-size: 18px;
           color: #070707;
         }
 
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
           margin-top: 60px;
           padding-top: 30px;
           text-align: center;
-          font-size: 0.8rem;
+          font-size: 18px;
           color: #070707;
           letter-spacing: 1px;
         }

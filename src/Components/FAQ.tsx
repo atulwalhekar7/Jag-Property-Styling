@@ -112,9 +112,9 @@ const FAQ: React.FC = () => {
           border: none;
           text-align: left;
           font-family: 'Playfair Display';
-          font-size: 1.2rem;
+          font-size: 20px;
           font-weight: 700;
-          color: #4A4A4A;
+          color: #0c0c0c;
           cursor: pointer;
           transition: color 0.3s ease;
         }
@@ -170,9 +170,9 @@ const FAQ: React.FC = () => {
         .faq-answer p {
           padding: 0 2rem 1.5rem;
           margin: 0;
-          color: #6D6D6D;
+          color: #0c0c0c;
           line-height: 1.8;
-          font-size: 1.05rem;
+          font-size: 20px;
         }
 
         @media (max-width: 768px) {
