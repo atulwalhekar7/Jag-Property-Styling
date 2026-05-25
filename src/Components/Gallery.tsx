@@ -6,6 +6,7 @@ import Image4 from '../assets/Study room.jpg';
 import Image5 from '../assets/Luxury bathroom.jpg';
 import Image6 from '../assets/Outdoor space.jpg';
 import Image7 from '../assets/Minimal interior.jpg';
+import Image8 from '../assets/kitchen.avif';
 
 interface GalleryItem {
   id: number;
@@ -22,6 +23,7 @@ const galleryItems: GalleryItem[] = [
   { id: 5, src: Image5, alt: 'Luxury bathroom', label: 'Bathrooms' },
   { id: 6, src: Image6, alt: 'Outdoor space', label: 'Outdoor Spaces' },
   { id: 7, src: Image7, alt: 'Minimal interior', label: 'Minimal Interiors' },
+  { id: 8, src: Image8, alt: 'kitchen', label: 'kitchen Area' },
 ];
 
 const Gallery: React.FC = () => {
