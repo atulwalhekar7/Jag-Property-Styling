@@ -79,7 +79,7 @@ const Banner: React.FC = () => {
         }
 
         .shop-button {
-          background-color: #795548;
+          background-color: #3e2723b8;
           color: white;
           border: none;
           padding: 15px 40px;
@@ -87,13 +87,23 @@ const Banner: React.FC = () => {
           font-size: 1rem;
           cursor: pointer;
           transition: all 0.3s ease;
+          animation: heartbeat 1.5s ease-in-out infinite;
           box-shadow: 0 4px 15px rgba(205, 175, 145, 0.3);
         }
 
         .shop-button:hover {
           background-color: #D9CBBF;
           transform: translateY(-3px);
+          animation: none;
           box-shadow: 0 6px 20px rgba(205, 175, 145, 0.4);
+        }
+
+        @keyframes heartbeat {
+          0% { transform: scale(1); }
+          14% { transform: scale(1.05); }
+          28% { transform: scale(1); }
+          42% { transform: scale(1.05); }
+          70% { transform: scale(1); }
         }
 
         
@@ -134,7 +144,7 @@ const Banner: React.FC = () => {
         </video>
         <div className="banner-content">
           
-          <h4>Curated Interiors</h4>
+          
           <h1>Elegance in Every Detail</h1>
           <p>
             Discover our curated selection of artisanal furniture designed to 
