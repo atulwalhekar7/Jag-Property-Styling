@@ -162,10 +162,10 @@ const Navbar: React.FC = () => {
         </button>
 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
-          <li><a href="/our-process" className="nav-item" onClick={() => setIsOpen(false)}>Our Process</a></li>
-          <li><a href="/faq" className="nav-item" onClick={() => setIsOpen(false)}>FAQ</a></li>
-          <li><a href="/gallery" className="nav-item" onClick={() => setIsOpen(false)}>Gallery</a></li>
-          <li><a href="/contact" className="nav-item" onClick={() => setIsOpen(false)}>Contact</a></li>
+          <li><a href="#about" className="nav-item" onClick={() => setIsOpen(false)}>About Us</a></li>
+          <li><a href="#our-process" className="nav-item" onClick={() => setIsOpen(false)}>Our Process</a></li>
+          <li><a href="#faq" className="nav-item" onClick={() => setIsOpen(false)}>FAQ</a></li>
+          <li><a href="#contact" className="nav-item" onClick={() => setIsOpen(false)}>Contact Us</a></li>
         </ul>
       </nav>
     </>

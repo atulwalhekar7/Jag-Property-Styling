@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImage from '../assets/banner1.webp';
+import bannerVideo from '../assets/banner-video2.mp4';
 
 const Banner: React.FC = () => {
   return (
@@ -11,8 +11,8 @@ const Banner: React.FC = () => {
           font-family: 'Libre Baskerville', serif;
           background-color: #ECE6DF;
           display: flex;
-          align-items: stretch;
-          justify-content: space-between;
+          align-items: center;
+          justify-content: center;
           padding: 0;
           min-height: 500px;
           overflow: hidden;
@@ -21,15 +21,40 @@ const Banner: React.FC = () => {
           border-radius: 8px;
         }
 
+        .banner-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.45);
+          z-index: 1;
+        }
+
+        .banner-video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 0;
+        }
+
         .banner-content {
-          flex: 1;
-          padding: 60px;
+          position: relative;
+          max-width: 800px;
+          padding: 80px 40px;
+          padding: 60px 40px;
           z-index: 2;
-          animation: slideInLeft 1s ease-out;
+          animation: fadeIn 1.2s ease-out;
+          animation: fadeInUp 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+          text-align: center;
+          margin: 20px;
         }
 
         .banner-content h4 {
-          color: #795548;
+          color: #CDAF91;
           text-transform: uppercase;
           letter-spacing: 3px;
           font-size: 0.9rem;
@@ -37,17 +62,20 @@ const Banner: React.FC = () => {
         }
 
         .banner-content h1 {
-          color: #0f0f0f;
+          color: #ffffff;
           font-size: 3.5rem;
           line-height: 1.2;
           margin: 0 0 20px 0;
+          text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .banner-content p {
-          color: #252525;
+          color: #ffffff;
           font-size: 1.1rem;
-          max-width: 450px;
+          max-width: 550px;
           margin-bottom: 30px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .shop-button {
@@ -66,18 +94,6 @@ const Banner: React.FC = () => {
           background-color: #D9CBBF;
           transform: translateY(-3px);
           box-shadow: 0 6px 20px rgba(205, 175, 145, 0.4);
-        }
-
-        .banner-visual {
-          flex: 1;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          background-image: url(${bannerImage});
-          background-size: cover;
-          background-position: center;
-          animation: fadeIn 1.5s ease-in;
         }
 
         
@@ -99,39 +115,32 @@ const Banner: React.FC = () => {
 
         @media (max-width: 1024px) {
           .banner-content h1 { font-size: 2.8rem; }
+          .banner-content h1 { font-size: 3.2rem; }
         }
 
         @media (max-width: 768px) {
-          .furniture-banner {
-            flex-direction: column;
-            min-height: auto;
-          }
           .banner-content {
-            padding: 40px 20px;
-            text-align: center;
+            padding: 60px 20px;
           }
           .banner-content h1 { font-size: 2.2rem; }
-          .banner-content p { margin: 0 auto 30px; }
-          .banner-visual {
-            height: 400px;
-            width: 100%;
-            flex: none;
-            order: -1;
-          }
+          .banner-content h1 { font-size: 2.4rem; }
+          .banner-content p { font-size: 1.1rem; }
         }
       `}</style>
       <section className="furniture-banner">
+        <div className="banner-overlay"></div>
+        <video className="banner-video" autoPlay loop muted playsInline>
+          <source src={bannerVideo} type="video/mp4" />
+        </video>
         <div className="banner-content">
-          <h4>New Collection 2024</h4>
+          
+          <h4>Curated Interiors</h4>
           <h1>Elegance in Every Detail</h1>
           <p>
             Discover our curated selection of artisanal furniture designed to 
             bring timeless sophistication and comfort to your living space.
           </p>
           <button className="shop-button">Explore Collection</button>
-        </div>
-        <div className="banner-visual">
-          <div className="abstract-shape"></div>
         </div>
       </section>
     </>

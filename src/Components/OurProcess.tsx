@@ -11,25 +11,25 @@ const OurProcess: React.FC = () => {
 
   const steps = [
     {
-      number: "01",
+      number: "1",
       title: "Initial Consultation",
       description: "We begin with a personalized on-site walkthrough. Our experts analyze natural light, architectural flow, and target buyer demographics to develop a tailored styling strategy and quote that maximizes your property's appeal.",
       image: step1
     },
     {
-      number: "02",
+      number: "2",
       title: "Design & Curation",
       description: "Our stylists dive into our exclusive warehouse collection to select furniture, original art, and bespoke textiles. Every piece is chosen to create a cohesive narrative that resonates with the character of your home.",
       image: step2
     },
     {
-      number: "03",
+      number: "3",
       title: "Seamless Installation",
       description: "On the day of staging, our professional team handles all logistics. We meticulously place every item and style the finishing touches, transforming the space into an aspirational environment in just a few hours.",
       image: step3
     },
     {
-      number: "04",
+      number: "4",
       title: "Success & De-staging",
       description: "Your property is now market-ready for professional photography and inspections. Once you've achieved a successful sale, our team returns to discreetly and efficiently remove all styling elements.",
       image: step4
@@ -63,7 +63,8 @@ const OurProcess: React.FC = () => {
           if (!entry.isIntersecting) return;
           const el = entry.target as HTMLElement;
           const target = parseInt(el.dataset.target || '0', 10);
-          let start = 0;
+          // Start counting from 1 to avoid showing 0
+          const startValue = 1;
           const duration = 800;
           const startTime = performance.now();
 
@@ -71,8 +72,8 @@ const OurProcess: React.FC = () => {
             const elapsed = now - startTime;
             const progress = Math.min(elapsed / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
-            const value = Math.round(eased * target);
-            el.textContent = String(value).padStart(2, '0');
+            const value = Math.round(startValue + (eased * (target - startValue)));
+            el.textContent = String(value);
             if (progress < 1) requestAnimationFrame(tick);
           };
           requestAnimationFrame(tick);
@@ -221,23 +222,25 @@ const OurProcess: React.FC = () => {
           flex: 1;
           position: relative;
         }
+
+        .step-header {
+          display: flex;
+          align-items: baseline;
+          gap: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+
         .step-number {
-          font-size: 6rem;
+          font-size: 4.5rem;
           color: #795548;
           font-weight: 700;
-          position: absolute;
-          top: -60px;
-          left: -20px;
-          z-index: 0;
-          /* subtle pulse when it starts counting */
+          line-height: 1;
           transition: color 0.3s ease;
         }
         .step-title {
           font-size: 2.2rem;
           color: #4A4A4A;
-          margin-bottom: 1.5rem;
-          position: relative;
-          z-index: 1;
+          margin: 0;
         }
         .step-description {
           color: #6D6D6D;
@@ -285,10 +288,10 @@ const OurProcess: React.FC = () => {
           .process-section { padding: 80px 2rem; }
           .step-image { height: 350px; }
           .step-number {
-            position: relative;
-            top: 0;
-            left: 0;
             font-size: 4rem;
+          }
+          .step-header {
+            justify-content: center;
           }
           .step-divider { transform-origin: center center; }
         }
@@ -312,13 +315,15 @@ const OurProcess: React.FC = () => {
                 </div>
               </div>
               <div className="step-content">
-                <span
-                  className="step-number"
-                  data-target={parseInt(step.number, 10)}
-                >
-                  00
-                </span>
-                <h3 className="step-title">{step.title}</h3>
+                <div className="step-header">
+                  <span
+                    className="step-number"
+                    data-target={parseInt(step.number, 10)}
+                  >
+                    {step.number}
+                  </span>
+                  <h3 className="step-title">{step.title}</h3>
+                </div>
                 <span className="step-divider" aria-hidden="true" />
                 <p className="step-description">{step.description}</p>
               </div>

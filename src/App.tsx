@@ -17,6 +17,7 @@ function App() {
       <Banner />
       <About />
       <OurProcess />
+     
       <FAQ />
       <Contact />
       <Footer />
