@@ -1,4 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
+import Image1 from '../assets/img2.avif'
+import Image2 from '../assets/bedroom.jpg';
+import Image3 from '../assets/Dining area.avif';
+import Image4 from '../assets/Study room.jpg';
+import Image5 from '../assets/Luxury bathroom.jpg';
+import Image6 from '../assets/Outdoor space.jpg';
+import Image7 from '../assets/Minimal interior.jpg';
 
 interface GalleryItem {
   id: number;
@@ -8,13 +15,13 @@ interface GalleryItem {
 }
 
 const galleryItems: GalleryItem[] = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&q=80', alt: 'Living room sofa', label: 'Living Spaces' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&q=80', alt: 'Modern bedroom', label: 'Bedrooms' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&q=80', alt: 'Dining area', label: 'Dining' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=500&q=80', alt: 'Study room', label: 'Study & Office' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&q=80', alt: 'Luxury bathroom', label: 'Bathrooms' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=500&q=80', alt: 'Outdoor space', label: 'Outdoor' },
-  { id: 7, src: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500&q=80', alt: 'Minimal interior', label: 'Minimal' },
+  { id: 1, src: Image1, alt: 'Living room sofa', label: 'Living Spaces' },
+  { id: 2, src: Image2, alt: 'Modern bedroom', label: 'Bedrooms' },
+  { id: 3, src: Image3, alt: 'Dining area', label: 'Dining' },
+  { id: 4, src: Image4, alt: 'Study room', label: 'Study & Office' },
+  { id: 5, src: Image5, alt: 'Luxury bathroom', label: 'Bathrooms' },
+  { id: 6, src: Image6, alt: 'Outdoor space', label: 'Outdoor' },
+  { id: 7, src: Image7, alt: 'Minimal interior', label: 'Minimal' },
 ];
 
 const Gallery: React.FC = () => {
