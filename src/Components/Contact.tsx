@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
         .contact-section {
           padding: 120px 4rem;
           background-color: #F9F0FB;
-          font-family: 'Libre Baskerville', serif;
+          font-family: 'Playfair Display';
           position: relative;
         }
 

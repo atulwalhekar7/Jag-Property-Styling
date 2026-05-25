@@ -12,7 +12,7 @@ const Image2: React.FC = () => {
           width: 100%;
           height: 500px;
           overflow: hidden;
-          font-family: 'Libre Baskerville', serif;
+          font-family: 'Playfair Display';
           
         }
 
@@ -20,8 +20,14 @@ const Image2: React.FC = () => {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          transform: scale(1); /* Initial state for zoom */
+          animation: imageZoom 10s infinite alternate ease-in-out; /* Subtle continuous zoom */
         }
 
+        @keyframes imageZoom {
+          0% { transform: scale(1); }
+          100% { transform: scale(1.05); }
+        }
         .image2-overlay {
           position: absolute;
           top: 0;
@@ -56,8 +62,13 @@ const Image2: React.FC = () => {
 
         @media (max-width: 768px) {
           .image2-container { height: 400px; }
-          .image2-text h3 { font-size: 2rem; }
+          .image2-text h3 { font-size: 2rem; } /* Changed from h2 to h3 as per previous request */
           .image2-text p { font-size: 1rem; }
+        }
+
+        @keyframes textFadeIn {
+          0% { opacity: 0; transform: translateY(20px); }
+          100% { opacity: 1; transform: translateY(0); }
         }
       `}</style>
 

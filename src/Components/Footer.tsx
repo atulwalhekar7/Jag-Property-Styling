@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         .footer {
           background-color: #D3D3D3;
           color: #ECE6DF;
-          font-family: 'Libre Baskerville', serif;
+          font-family: 'Playfair Display';
           padding: 80px 4rem 30px;
         }
 

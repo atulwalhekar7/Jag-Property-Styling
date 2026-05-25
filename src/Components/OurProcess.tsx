@@ -97,7 +97,7 @@ const OurProcess: React.FC = () => {
         .process-section {
           padding: 100px 4rem;
           background-color: #eaefd9;
-          font-family: 'Libre Baskerville', serif;
+          font-family: 'Playfair Display';
           overflow: hidden;
         }
 

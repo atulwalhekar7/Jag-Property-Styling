@@ -8,7 +8,7 @@ const About: React.FC = () => {
         .about-section {
           padding: 100px 4rem;
           background-color: #C9C0BB;
-          font-family: 'Libre Baskerville', serif;
+          font-family: 'Playfair Display';
           overflow: hidden;
         }
 

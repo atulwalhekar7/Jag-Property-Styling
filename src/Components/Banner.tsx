@@ -8,7 +8,7 @@ const Banner: React.FC = () => {
         @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
         .furniture-banner {
-          font-family: 'Libre Baskerville', serif;
+          font-family: 'Playfair Display';
           background-color: #ECE6DF;
           display: flex;
           align-items: center;

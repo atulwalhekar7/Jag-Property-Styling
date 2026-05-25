@@ -9,12 +9,14 @@ import FAQ from './Components/FAQ'
 import Contact from './Components/Contact'
 import Image1 from './Components/Image1'
 import Image2 from './Components/Image2'
+// import ScrollToTop from './Components/ScrollToTop'
 
 function App() {
   const [] = useState(0)
 
   return (
     <>
+      {/* <ScrollToTop /> */}
       <Navbar />
       <Banner />
       <About />

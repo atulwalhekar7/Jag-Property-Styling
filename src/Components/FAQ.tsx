@@ -36,7 +36,7 @@ const FAQ: React.FC = () => {
         .faq-section {
           padding: 100px 4rem;
           background-color: #F9F7F2;
-          font-family: 'Libre Baskerville', serif;
+          font-family: 'Playfair Display';
         }
 
         .faq-container {
@@ -111,7 +111,7 @@ const FAQ: React.FC = () => {
           background: none;
           border: none;
           text-align: left;
-          font-family: 'Libre Baskerville', serif;
+          font-family: 'Playfair Display';
           font-size: 1.2rem;
           font-weight: 700;
           color: #4A4A4A;
