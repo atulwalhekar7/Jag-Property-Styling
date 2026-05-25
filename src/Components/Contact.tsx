@@ -203,12 +203,18 @@ const Contact: React.FC = () => {
         @media (max-width: 1024px) {
           .contact-container { grid-template-columns: 1fr; }
           .contact-info-panel { order: 2; }
-          .contact-form-panel { order: 1; padding: 4rem 3rem; }
+          .contact-form-panel { order: 1; padding: 3rem 2rem; }
         }
 
         @media (max-width: 768px) {
           .contact-section { padding: 80px 1.5rem; }
           .contact-header h2 { font-size: 2.6rem; }
+        }
+
+        @media (max-width: 480px) {
+          .contact-title { font-size: 2.4rem; }
+          .form-group { margin-bottom: 2.5rem; }
+          .contact-form-panel { padding: 2rem 1.5rem; }
         }
       `}</style>
 

@@ -292,6 +292,9 @@ const OurProcess: React.FC = () => {
           }
           .step-divider { transform-origin: center center; }
         }
+        @media (max-width: 480px) {
+          .step-title { font-size: 1.6rem; }
+        }
       `}</style>
 
       <section className="process-section" id="our-process" ref={sectionRef}>

@@ -107,6 +107,7 @@ const Footer: React.FC = () => {
           .footer {
             padding: 60px 2rem 30px;
           }
+          .footer-section { text-align: left; }
         }
       `}</style>
       <footer className="footer">

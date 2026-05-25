@@ -97,7 +97,6 @@ const About: React.FC = () => {
           .about-content {
             flex-direction: column;
             gap: 40px;
-            text-align: center;
           }
           .about-section {
             padding: 60px 2rem;
@@ -108,6 +107,12 @@ const About: React.FC = () => {
           .about-header h2 {
             font-size: 2.2rem;
           }
+          .about-text { text-align: left; }
+        }
+
+        @media (max-width: 480px) {
+          .about-header h2 { font-size: 1.8rem; }
+          .about-text p { font-size: 1.05rem; }
         }
       `}</style>
       <section className="about-section" id="about">

@@ -186,6 +186,12 @@ const FAQ: React.FC = () => {
             padding: 1.2rem 1.5rem;
             font-size: 1.1rem;
           }
+          .faq-answer p {
+            padding: 0 1.5rem 1.2rem;
+          }
+        }
+        @media (max-width: 480px) {
+          .faq-header h2 { font-size: 1.8rem; }
         }
       `}</style>
 

@@ -96,6 +96,29 @@ const Banner: React.FC = () => {
           50% { border-radius: 70% 30% 50% 50% / 30% 60% 40% 70%; background-color: #D9CBBF; }
           100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; background-color: #E2D5C9; }
         }
+
+        @media (max-width: 1024px) {
+          .banner-content h1 { font-size: 2.8rem; }
+        }
+
+        @media (max-width: 768px) {
+          .furniture-banner {
+            flex-direction: column;
+            min-height: auto;
+          }
+          .banner-content {
+            padding: 40px 20px;
+            text-align: center;
+          }
+          .banner-content h1 { font-size: 2.2rem; }
+          .banner-content p { margin: 0 auto 30px; }
+          .banner-visual {
+            height: 400px;
+            width: 100%;
+            flex: none;
+            order: -1;
+          }
+        }
       `}</style>
       <section className="furniture-banner">
         <div className="banner-content">
