@@ -39,8 +39,10 @@ const About: React.FC = () => {
           height: 55%;
           z-index: 1;
           border-radius: 2px;
-          overflow: hidden;
+          border: 6px solid #fff;
+          transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, z-index 0s;
           box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+          overflow: hidden;
         }
 
         /* Large landscape card – center / right, taller */
@@ -52,8 +54,10 @@ const About: React.FC = () => {
           height: 90%;
           z-index: 2;
           border-radius: 2px;
-          overflow: hidden;
+          border: 6px solid #fff;
+          transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, z-index 0s;
           box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+          overflow: hidden;
         }
 
         /* Small landscape card – bottom-left, partially behind large */
@@ -65,8 +69,17 @@ const About: React.FC = () => {
           height: 38%;
           z-index: 3;
           border-radius: 2px;
-          overflow: hidden;
+          border: 6px solid #fff;
+          transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, z-index 0s;
           box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+          overflow: hidden;
+        }
+
+        /* Pop out animation on hover */
+        .img-card-sm:hover, .img-card-lg:hover, .img-card-xs:hover {
+          transform: scale(1.08) translateY(-15px);
+          box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+          z-index: 10;
         }
 
         .about-image-collage img {
@@ -75,10 +88,6 @@ const About: React.FC = () => {
           object-fit: cover;
           display: block;
           transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-
-        .about-image-collage img:hover {
-          transform: scale(1.04);
         }
 
         /* ── Right: text block ── */
